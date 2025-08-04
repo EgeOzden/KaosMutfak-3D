@@ -14,42 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1743244025
+  lastShownTimestamp: 1754249731
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1743244025
+  checkedLastUpdateTimestamp: 1754249731
   lastQOTDResponse:
-    questionId: 165
-    questionText: 'Does this variable get reset when you load a different Scene?
-
-      <p>private
-      static int score;</p>'
-    answerA: Yes
-    answerB: No
-    answerC: Only when loading the Main Menu
-    answerD: 
+    questionId: 207
+    questionText: How should you store the health of each unit in your game?
+    answerA: public int health;
+    answerB: private int health;
+    answerC: public static int health;
+    answerD: private int h;
     answerE: 
-  lastQotdTimestamp: 1743244025
+  lastQotdTimestamp: 1754249731
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleSyntyMar25Extended.png
-    topText: Make ANY game with these awesome Assets! (97% OFF!)
-    topLink: humblebundle
-    bottomText: Learn Unity DOTS for MASSIVE Performance Boosts! (and make an RTS)
-    bottomLink: dotscourse
-  lastDynamicHeaderTimestamp: 1743244025
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle.png
+    topText: All my Courses (and Games) in one Bundle! DEEP DISCOUNT ONLY THIS SUMMER!
+    topLink: summer2025bundle
+    bottomText: Get my Code Monkey Toolkit and make games BETTER and FASTER! 50%
+      OFF right now!
+    bottomLink: toolkit
+  lastDynamicHeaderTimestamp: 1754249731
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1743244025
+  websiteLatestMessageTimestamp: 1754249731
   websiteLatestVideos:
     videos:
-    - youTubeId: SJClo9ny1kM
-      title: TOP 20 Visual Assets to INSPIRE YOU! (MARCH 2025)
-    - youTubeId: 2-B1HH0rWRI
-      title: EVERYTHING Steam did in 2024! (Devs NEED to Know)
-    - youTubeId: QYrKiHq7Vaw
-      title: TOP 10 NEW Systems and Tools MARCH 2025! | Unity Asset Store
-    - youTubeId: ZIg7VoD9ptI
-      title: The FUTURE of Unity in 2025 and BEYOND!
-  websiteLatestVideosTimestamp: 1743244025
+    - youTubeId: ubBS7vTQlVo
+      title: Cooking is HARDER than Programming!
+    - youTubeId: kWRCB-R2Yrg
+      title: TOP 20 Visual Assets to INSPIRE YOU! (JULY 2025)
+    - youTubeId: K-AjBKP4uq0
+      title: I Made Over $1 MILLION Making Indie Games, Could YOU Do This in 2025?
+    - youTubeId: YMMS621ZoI8
+      title: NEW Steam 2025 Marketing Tips you NEED to know!
+  websiteLatestVideosTimestamp: 1754249731

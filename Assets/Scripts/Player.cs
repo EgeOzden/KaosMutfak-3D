@@ -6,8 +6,12 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField] private float moveSpeed = 4f;
-        
-    private void Update(){
+    [SerializeField] private float rotaSpeed = 9f;
+
+
+    private bool isWalking; //PlayerAnimator için true false değişkeni
+    private void Update()
+    {
 
 
         //{ input }
@@ -32,22 +36,26 @@ public class Player : MonoBehaviour
         //{ process }
         Vector3 moveDirec = new Vector3(inputVector.x, 0f, inputVector.y);
         transform.position += moveDirec * moveSpeed * Time.deltaTime;
-        */  
+        */
 
-    
+
         //---------- Benim yöntem
         //{ input }
         Vector3 moveDirec = new Vector3(0, 0f, 0);
-        if (Input.GetKey(KeyCode.W)){
+        if (Input.GetKey(KeyCode.W))
+        {
             moveDirec.z = +1;
-        }      
-        if (Input.GetKey(KeyCode.A)){
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
             moveDirec.x = -1;
-        }  
-        if (Input.GetKey(KeyCode.S)){
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
             moveDirec.z = -1;
-        }  
-        if (Input.GetKey(KeyCode.D)){
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
             moveDirec.x = +1;
         }
 
@@ -55,5 +63,17 @@ public class Player : MonoBehaviour
 
         //{ process }
         transform.position += moveDirec * moveSpeed * Time.deltaTime;
+
+        isWalking = moveDirec != Vector3.zero; //0.0.0 pozisyonunda değilse hareket ediyordur.
+
+
+        //transform.forward = moveDirec; //Yön 90 derece sert dönüş
+        transform.forward = Vector3.Slerp(transform.forward, moveDirec * -1, rotaSpeed * Time.deltaTime); // yumuşak vektörel dönüş
+
+    }
+
+    public bool IsWalking() //Bu methodun dönüşü PlayerAnimator scriptte kullanılır, true ise hareket var, false ise hareket yoktur.
+    {
+        return isWalking;
     }
 }
